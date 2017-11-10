@@ -1,0 +1,16 @@
+.file{
+	display: inline-flex;
+	
+}
+.border{
+	border-bottom: solid 1px #d8d8d8;
+}
+.filecontent{
+	margin: 100px auto 0px;
+	width: 30%;
+    justify-content: center;
+}
+.logopdf a img{
+	height: 85px;
+	width: auto;
+}

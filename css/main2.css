@@ -1,0 +1,68 @@
+html{
+	min-height: 100%;
+}
+header{
+	justify-content: space-between;
+	display: flex;
+	border-bottom: solid 1px #b1d914;
+}
+body{
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+}
+.logopinxel{
+	margin: 0;
+}
+.logopinxel img{
+	height: 60px;
+	width: auto;
+	padding: 12px 0px 0px 20px;
+}
+.buttons{
+	margin-top: 30px;
+	margin-right: 4%;
+}
+.buttons a{
+	color: #000;
+	text-decoration: none;
+	font-size: 1.3em;
+	padding: 0 15px;
+	background: #b1d914;
+	border: solid 1px #fff;
+	border-radius: 13px;
+}
+
+@media screen and (max-width: 550px) {
+html{
+	min-height: 100%;
+}
+header{
+	justify-content: space-between;
+	display: initial;
+	border-bottom: solid 1px #b1d914;
+}
+body{
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+}
+.logopinxel img{
+	height: 60px;
+	width: auto;
+	padding: 12px 0px 0px 20px;
+}
+.buttons{
+    margin-top: 30px;
+    margin-right: 0;
+    display: inline-flex;
+    text-align: center;
+    overflow-x: auto;}
+.buttons a{
+	color: #000;
+	text-decoration: none;
+	font-size: 1.3em;
+	padding: 0 15px;
+	background: #ed1c24;
+	border: solid 1px #fff;
+	border-radius: 13px;
+}
+}
