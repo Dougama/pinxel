@@ -5,23 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>PInXEL - Mural</title>
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css\mural.css">
-	<link rel="stylesheet" type="text/css" href="css\main2.css">
+	<link rel="stylesheet" type="text/css" href="css/mural.css">
+	<link rel="stylesheet" type="text/css" href="css/main2.css">
 </head>
 <body>
-<header>
-<div class="logopinxel">
-	<img src="img\logopinxel.png" width="627" height="203">
-</div>
-<div class="buttons">
-	<a href="index.html">Pinxel</a>
-	<a href="mural.html">Mural</a>
-	<a href="sorzano.html">Sorzano</a>
-	<a href="info.html">Info</a>
-</div>
-</header>
-<div>
-	<h1>Mural</h1>
-</div>
+	<header>
+		<div class="logopinxel">
+			<img src="img/logopinxel.png" width="627" height="203">
+		</div>
+		<div class="buttons">
+			<a href="index.html">Pinxel</a>
+			<a href="mural.html">Mural</a>
+			<a href="sorzano.html">Sorzano</a>
+			<a href="info.html">Info</a>
+		</div>
+	</header>
+
+	<div>
+		<div id="canvas-wrapper" class="canvasWrapper">
+			<canvas id="canvas" width="730" height="300"></canvas>
+		</div>
+
+		<div class="buttonsList" id="buttons"></div>
+	</div>
+
+	<script src="js/vendor/howler.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
