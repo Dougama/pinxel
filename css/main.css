@@ -26,13 +26,12 @@ body{
 	margin-right: 4%;
 }
 .buttons a{
-	color: #000;
-	text-decoration: none;
-	font-size: 1.3em;
-	padding: 0 15px;
-	background: #b1d914;
-	border: solid 1px #fff;
-	border-radius: 13px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 0 15px;
+  border: solid 1px #fff;
+
 }
 
 .buttons a:visited{
@@ -50,23 +49,11 @@ html{
 	min-height: 100%;
 }
 header{
-	text-align: right;
+	text-align: center;
 }
 body{
 	font-family: 'Oswald', sans-serif;
 	margin: 0;
-}
-#video-background {
-/*  making the video fullscreen  */
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  width: 100%;
-  min-width: 100%; 
-  min-height: 100%;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
 }
 
 .buttons{
@@ -82,11 +69,9 @@ body{
 	text-decoration: none;
 	font-size: 1.3em;
 	padding: 0 15px;
-	background: #b1d914;
-	border: solid 1px #fff;
-	border-radius: 13px;
+  border: solid 1px #fff;
 }
-#video-background {
+/*#video-background {
 /*  making the video fullscreen  */
     position: fixed;
     right: 0;
@@ -99,5 +84,5 @@ body{
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-
+*/
 }
