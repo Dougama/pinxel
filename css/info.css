@@ -7,10 +7,14 @@
 }
 .filecontent{
 	margin: 100px auto 0px;
-	width: 30%;
+	width: 100%;
     justify-content: center;
+    display: grid;
 }
 .logopdf a img{
-	height: 85px;
+	height: 50px;
 	width: auto;
+}
+.textfile h2{
+	margin: 0;
 }
