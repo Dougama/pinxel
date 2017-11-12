@@ -70,4 +70,9 @@ body{
 /*	background: #ed1c24;*/
 	border: solid 1px #fff;
 }
+.videoPlayer-iframe {
+    display: block;
+    margin: 5rem auto 0;
+    max-width: 100%;
+}
 }
