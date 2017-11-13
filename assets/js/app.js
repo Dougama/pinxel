@@ -72,7 +72,7 @@ sprite.onload = function() {
 	createObjectsButtons();
 }
 
-sprite.src = '/img/sprite/jeanneret.png';
+sprite.src = '/assets/img/sprite/jeanneret.png';
 
 const spriteMap = [
 	[0, 0, 730, 634],
@@ -90,19 +90,19 @@ const spriteMap = [
 ];
 
 const bgSound = new Howl({
-	src: ['/sounds/background1.wav'],
+	src: ['/assets/sounds/background1.wav'],
 	loop: true
 });
 
 const clickSounds = [
-	new Howl({src: '/sounds/clickrelexivo.wav'}),
-	new Howl({src: '/sounds/clickondulado2.wav'}),
-	new Howl({src: '/sounds/clickfunny.wav'}),
-	new Howl({src: '/sounds/clickjuego.wav'}),
-	new Howl({src: '/sounds/clickloco.wav'}),
-	new Howl({src: '/sounds/clickmisterio.wav'}),
-	new Howl({src: '/sounds/clickpunti.wav'}),
-	new Howl({src: '/sounds/clickpuntihip.wav'}),
+	new Howl({src: '/assets/sounds/clickrelexivo.wav'}),
+	new Howl({src: '/assets/sounds/clickondulado2.wav'}),
+	new Howl({src: '/assets/sounds/clickfunny.wav'}),
+	new Howl({src: '/assets/sounds/clickjuego.wav'}),
+	new Howl({src: '/assets/sounds/clickloco.wav'}),
+	new Howl({src: '/assets/sounds/clickmisterio.wav'}),
+	new Howl({src: '/assets/sounds/clickpunti.wav'}),
+	new Howl({src: '/assets/sounds/clickpuntihip.wav'}),
 ];
 
 function createObjectsButtons() {
@@ -116,7 +116,7 @@ function createObjectsButtons() {
 
 		button.className = 'itemButton';
 
-		button.style.backgroundImage = 'url(img/sprite/jeanneret.png)';
+		button.style.backgroundImage = 'url(/assets/img/sprite/jeanneret.png)';
 		button.style.width = `${newSizes.tileW}px`;
 		button.style.height = `${newSizes.tileH}px`;
 		button.style.backgroundPosition = `-${newSizes.tileX}px -${newSizes.tileY}px`;
