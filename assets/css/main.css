@@ -5,7 +5,7 @@ header{
 	text-align: right;
 }
 body{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Neo Sans Pro', sans-serif;
 	margin: 0;
   background: #000;
 }
@@ -46,22 +46,11 @@ body{
 }
 
 @media screen and (max-width: 550px) {
-html{
-	min-height: 100%;
-}
-header{
-	text-align: center;
-}
-body{
-	font-family: 'Oswald', sans-serif;
-	margin: 0;
-}
-
 .buttons{
-    margin-top: 44px;
-    /* margin-right: 0; */
+    margin: 44px auto 0;
+    margin-right: 0;
     justify-content: center;
-    display: inline-flex;
+    display: flex;
     /* text-align: center; */
     overflow-x: auto;
 }

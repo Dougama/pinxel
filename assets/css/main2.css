@@ -8,7 +8,7 @@ header{
 	padding-bottom: 15px;
 }
 body{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Neo Sans Pro', sans-serif;
 	margin: 0;
 }
 .logopinxel{
@@ -22,6 +22,8 @@ body{
 .buttons{
 	margin-top: 30px;
 	margin-right: 4%;
+	white-space: nowrap;
+	overflow-x: auto;
 }
 .buttons a{
 	color: #000;
