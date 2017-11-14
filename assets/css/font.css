@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Neo Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/nsp.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/nsp-bold.ttf') format('truetype');
+}
