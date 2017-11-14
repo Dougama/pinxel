@@ -21,6 +21,8 @@ body{
 .buttons{
 	margin-top: 30px;
 	margin-right: 4%;
+	white-space: nowrap;
+	overflow-x: auto;
 }
 .buttons a{
 	color: #000;
