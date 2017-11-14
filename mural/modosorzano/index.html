@@ -8,6 +8,34 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/modosorzano.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/main2.css">
 	<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+
+	<style>
+		.view-result .appWrapper {
+			display: none;
+		}
+
+		.result {
+			display: none;
+		}
+
+		.view-result .result {
+			display: block;
+		}
+
+		.resultWrapper {
+			text-align: center;
+		}
+
+		.finishButton {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.backToEdit {
+			display: block;
+			margin: 0 auto;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -18,17 +46,23 @@
 
 			<a href="/" style="background: #00aeef">Pinxel</a>
 			<a href="/mural" style="background: #f05a72">Mural</a>
-<!-- 			<a href="/sorzano" style="background: #b98760">Sorzano</a> -->
 			<a href="/info" style="background: #f9ae18">Info</a>
 		</div>
 	</header>
 
-	<div>
-		<div id="canvas-wrapper" class="canvasWrapper">
-			<canvas id="canvas" width="730" height="300"></canvas>
-		</div>
+	<div id="view" class="view">
+		<div class="appWrapper">
+			<div id="canvas-wrapper" class="canvasWrapper">
+				<canvas id="canvas" width="730" height="300"></canvas>
+			</div>
 
-		<div class="buttonsList" id="buttons"></div>
+			<div class="buttonsList" id="buttons"></div>
+			<button id="finish" class="finishButton">Finish</button>
+		</div>
+		<div class="result">
+			<div id="finish-holder" class="resultWrapper"></div>
+			<button id="back" class="backToEdit">Seguir editando</button>
+		</div>
 	</div>
 
 	<script src="/assets/js/vendor/howler.js"></script>

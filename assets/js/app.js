@@ -1,9 +1,13 @@
 "use strict";
 
+const view  = document.getElementById('view');
 const canvasWrapper = document.getElementById('canvas-wrapper');
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const buttonsContainer = document.getElementById('buttons');
+const finishButton = document.getElementById('finish');
+const finishHolder = document.getElementById('finish-holder');
+const backButton = document.getElementById('back');
 
 let spriteLoaded = false;
 let touchedObject = -1;
@@ -57,7 +61,6 @@ function Filters() {
 }
 
 const filters = new Filters();
-
 const sprite = new Image();
 
 sprite.onload = function() {
@@ -320,6 +323,23 @@ function onTouchEndOrMouseUp(e) {
   	objStartX = null;
   	objStartY = null;
 }
+
+function finish() {
+	const imageData = canvas.toDataURL();
+	const image = new Image();
+	image.src = imageData;
+
+	finishHolder.appendChild(image);
+	view.classList.add('view-result');
+}
+
+function backToEdit() {
+	finishHolder.innerHTML = '';
+	view.classList.remove('view-result');
+}
+
+finishButton.addEventListener('click', finish);
+back.addEventListener('click', backToEdit);
 
 canvas.addEventListener('touchstart', onTouchStartOrMouseDown, false);
 canvas.addEventListener('touchmove', onTouchMoveOrMouseMove, false);
