@@ -1,0 +1,27 @@
+
+
+.canvasWrapper {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	max-width: 630px;
+	margin: 0 auto;
+}
+
+#canvas {
+}
+
+.buttonsList {
+	white-space: nowrap;
+	overflow-y: auto;
+}
+
+.itemButton {
+	background: none;
+	border: none;
+	text-indent: -3000px;
+	font-size: 0;
+}
+
+.itemButton-active {
+	background-color: #ccc;
+}

@@ -1,15 +1,16 @@
 .file{
 	display: inline-flex;
-	
+
 }
 .border{
 	border-bottom: solid 1px #d8d8d8;
 }
 .filecontent{
 	margin: 100px auto 0px;
-	width: 100%;
+	width: 95%;
     justify-content: center;
     display: grid;
+    font-size: small;
 }
 .logopdf a img{
 	height: 50px;
@@ -17,4 +18,10 @@
 }
 .textfile h2{
 	margin: 0;
+}
+.infovideo{
+
+}
+.videoPlayer{
+
 }
