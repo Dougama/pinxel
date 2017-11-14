@@ -5,6 +5,7 @@ header{
 	justify-content: space-between;
 	display: flex;
 	border-bottom: solid 1px #b1d914;
+	padding-bottom: 15px;
 }
 body{
 	font-family: 'Oswald', sans-serif;
