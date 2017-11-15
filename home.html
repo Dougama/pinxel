@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PInXel</title>
+	<link href="/assets/css/font.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+</head>
+<body>
+	<header>
+		<div class="buttons">
+			<a href="/" style="background: #00aeef; color:#fff">Pinxel</a>
+			<a href="/mural" style="background: #f05a72">Lienzo electrónico</a>
+			<a href="/info" style="background: #f9ae18">Info</a>
+		</div>
+	</header>
+	<video defaultMuted muted id="video-background" width="1920" height="1080" poster="/assets/img/logopinxel.png">
+		<source src="/assets/videos/pinxelshort.mp4">
+	</video>
+	<script>
+		var video = document.getElementById('video-background');
+
+		video.addEventListener('loadeddata', function() {
+			video.play();
+			console.log('Loaded');
+		});
+	</script>
+</body>
+</html>
