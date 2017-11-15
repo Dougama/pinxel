@@ -244,7 +244,7 @@ function paintObjects() {
 function draw() {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-	filters.apply(ctx);
+	//filters.apply(ctx);
 	paintBg();
 	paintObjects();
 }
