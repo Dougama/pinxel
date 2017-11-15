@@ -10,12 +10,12 @@
 	<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
 
 	<style>
-		.view-result .appWrapper {
+		.result {
 			display: none;
 		}
 
-		.result {
-			display: none;
+		.appWrapper {
+			display: block;
 		}
 
 		.view-result .result {
@@ -56,7 +56,7 @@
 	</style>
 </head>
 <body>
-	<header>
+	<header class="appHeader">
 		<div class="logopinxel">
 			<img src="/assets/img/logopinxel.png" width="627" height="203">
 		</div>
@@ -78,7 +78,7 @@
 			<button id="finish" class="finishButton">Finalizar</button>
 		</div>
 		<div class="appWrapper instructivo">
-			<p>Para ensamblar tu obra selecciona el elmento, arrástralo hasta ubicarlo en el lugar deseado. Finaliza para poder descargar</p>
+			<p>Para ensamblar tu obra haz click sobre el elemento, arrástralo hasta el lugar deseado. Haz click en el botón "Finalizar" para poder descargar.</p>
 		</div>
 		<div class="result">
 			<div id="finish-holder" class="resultWrapper"></div>
