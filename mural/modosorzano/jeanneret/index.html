@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#f5c300"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PInXEL - Mural</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/assets/css/modosorzano.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/main2.css">
+	<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+
+	<style>
+		.result {
+			display: none;
+		}
+
+		.view-result .appWrapper {
+			display: none;
+		}
+
+		.view-result .result {
+			display: block;
+		}
+
+		.resultWrapper {
+			text-align: center;
+		}
+
+		.finishButton {
+			display: block;
+			margin: 1.5rem auto;
+			background: #00aeef;
+			border: none;
+			color: #fff;
+			padding: .5em 1em;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.backToEdit {
+			display: block;
+			margin: 1.5rem auto;
+			background: #f05a72;
+			border: none;
+			color: #fff;
+			padding: .5em 1em;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.help {
+			width: 90%;
+			max-width: 460px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header class="appHeader">
+		<div class="logopinxel">
+			<img src="/assets/img/logopinxel.png" width="627" height="203">
+		</div>
+		<div class="buttons">
+
+			<a href="/" style="background: #00aeef">Inicio</a>
+			<a href="/info" style="background: #f9ae18">Info</a>
+		</div>
+	</header>
+
+	<div id="view" class="view">
+		<div class="appWrapper">
+			<div id="canvas-wrapper" class="canvasWrapper">
+				<canvas id="canvas" width="730" height="300"></canvas>
+			</div>
+
+			<div class="buttonsList" id="buttons"></div>
+			<button id="finish" class="finishButton">Finalizar</button>
+		</div>
+		<div class="appWrapper instructivo">
+			<p>Para ensamblar tu obra haz click sobre el elemento y arrástralo hasta el lugar deseado.<br>Haz click en el botón "Finalizar" para poder descargar.</p>
+		</div>
+		<div class="result">
+			<div id="finish-holder" class="resultWrapper"></div>
+			<button id="back" class="backToEdit">Seguir editando</button>
+
+			<p class="help">Manten presionada (Móvil), arrastra o haz click derecho (PC) en la imagen para guardarla.</p>
+		</div>
+	</div>
+
+	<script src="/assets/js/vendor/howler.js"></script>
+	<script src="/assets/js/app.js"></script>
+</body>
+</html>
