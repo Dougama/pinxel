@@ -10,11 +10,11 @@
 	<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
 
 	<style>
-		.view-result .appWrapper {
+		.result {
 			display: none;
 		}
 
-		.result {
+		.view-result .appWrapper {
 			display: none;
 		}
 
@@ -56,14 +56,13 @@
 	</style>
 </head>
 <body>
-	<header>
+	<header class="appHeader">
 		<div class="logopinxel">
 			<img src="/assets/img/logopinxel.png" width="627" height="203">
 		</div>
 		<div class="buttons">
 
 			<a href="/" style="background: #00aeef">Pinxel</a>
-			<a href="/mural" style="background: #f05a72">Lienzo electrónico</a>
 			<a href="/info" style="background: #f9ae18">Info</a>
 		</div>
 	</header>
@@ -78,13 +77,13 @@
 			<button id="finish" class="finishButton">Finalizar</button>
 		</div>
 		<div class="appWrapper instructivo">
-			<p>Para ensamblar tu obra selecciona el elmento, arrástralo hasta ubicarlo en el lugar deseado. Finaliza para poder descargar</p>
+			<p>Para ensamblar tu obra haz click sobre el elemento y arrástralo hasta el lugar deseado.<br>Haz click en el botón "Finalizar" para poder descargar.</p>
 		</div>
 		<div class="result">
 			<div id="finish-holder" class="resultWrapper"></div>
 			<button id="back" class="backToEdit">Seguir editando</button>
 
-			<p class="help">Manten presionada, arrastra o haz click derecho en la imagen para guardarla.</p>
+			<p class="help">Manten presionada (Móvil), arrastra o haz click derecho (PC) en la imagen para guardarla.</p>
 		</div>
 	</div>
 
